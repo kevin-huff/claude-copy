@@ -1,0 +1,34 @@
+{
+  "name": "rcopy",
+  "version": "0.1.0",
+  "description": "Highlight part of a Claude reply in Claude Code full-screen mode, press Alt+C, and paste it into Outlook, Teams, Word, Slack or Google Docs with its formatting. WSL on Windows.",
+  "author": {
+    "name": "kevin-huff",
+    "url": "https://github.com/kevin-huff"
+  },
+  "homepage": "https://github.com/kevin-huff/claude-copy",
+  "repository": "https://github.com/kevin-huff/claude-copy",
+  "license": "Unlicense",
+  "keywords": ["clipboard", "copy", "html", "markdown", "wsl", "windows"],
+  "userConfig": {
+    "defaultVariant": {
+      "type": "string",
+      "title": "What Alt+C and /rcopy copy",
+      "description": "rich: formatted text plus plain text. md: the Markdown source. plain: clean plain text. html: the HTML source as text.",
+      "default": "rich",
+      "options": ["rich", "md", "plain", "html"]
+    },
+    "tableBorders": {
+      "type": "boolean",
+      "title": "Table borders",
+      "description": "Draw borders around table cells in formatted copies.",
+      "default": true
+    },
+    "codeColors": {
+      "type": "boolean",
+      "title": "Code colors",
+      "description": "Color the syntax in code blocks of formatted copies.",
+      "default": true
+    }
+  }
+}
